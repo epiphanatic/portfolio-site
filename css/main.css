@@ -1,0 +1,167 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3310d1");
+
+
+@font-face {font-family: 'MuseoSansRounded-300';src: url('../webfonts/3310D1_0_0.eot');src: url('../webfonts/3310D1_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/3310D1_0_0.woff2') format('woff2'),url('../webfonts/3310D1_0_0.woff') format('woff'),url('../webfonts/3310D1_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'MuseoSansRounded-500';src: url('../webfonts/3310D1_1_0.eot');src: url('../webfonts/3310D1_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/3310D1_1_0.woff2') format('woff2'),url('../webfonts/3310D1_1_0.woff') format('woff'),url('../webfonts/3310D1_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'MuseoSansRounded-700';src: url('../webfonts/3310D1_2_0.eot');src: url('../webfonts/3310D1_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/3310D1_2_0.woff2') format('woff2'),url('../webfonts/3310D1_2_0.woff') format('woff'),url('../webfonts/3310D1_2_0.ttf') format('truetype');}
+
+
+html {
+    color: #32332f;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+===========================================
+
+Start - Main application styling
+
+===========================================
+*/
+
+/* color palette */
+/* black: 32332f */
+/* darker green: 229905 */
+/* lighter green: 82cc00 */
+/* grey: e5e5e5 */
+/* yellow: ffce00 */
+
+* {
+    font-family: MuseoSansRounded-500;
+}
+
+a {
+    color: #32332f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #229905;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: MuseoSansRounded-700;
+    color: #32332f;
+    font-size: xx-large;
+    margin: .5em 0 0 0;
+}
+
+h2 {
+    color: #229905;
+}
+
+h3 {
+    color: #32332f;
+    margin: .5em 0 .5em 0;
+}
+
+div {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.separator {
+    border-bottom: solid .5em #ffce00;
+    margin: 1em 0 2em 0;
+    width: 100%;
+}
+
+.branding {
+    background-color: #82cc00;
+    max-width: 90px;
+    max-height: 90px;
+    padding: .5em 0 .5em 0;
+    margin: .5em 0 .5em 0;
+    border-radius: 100%;
+    box-shadow: 10px 10px 5px 0 rgba(229,229,229,1);
+}
+
+/*
+ * Media queries
+ */
+
+@media screen and (max-width: 991px) {
+    figcaption {
+        font-size: .8em;
+    }
+    h2 {
+        text-align: center;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .branding {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/*
+===========================================
+
+End - Main application styling
+
+===========================================
+*/
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
